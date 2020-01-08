@@ -1,7 +1,7 @@
 ## Grid Layout
 ![screenshot Grid layout](design/screen.png)
 
-## Preview (in progress)
+## Preview (in progress :hourglass_flowing_sand:)
 [Grid Layout]()
 
 ## Origamid  
