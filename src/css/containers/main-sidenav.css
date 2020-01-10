@@ -1,0 +1,17 @@
+.sidenav {
+    grid-area: sidenav;
+    background: var(--color-quaternary);
+    padding: var(--gap-normal);
+}
+
+.sidenav > ul > li > .side-card {
+    display: block;
+    min-width: var(--gap-big);
+    max-width: var(--gap-biggest);
+    margin: 0px auto var(--gap-normal) auto;
+    padding: var(--gap-small);
+}
+
+.sidenav > ul > li > .side-card:hover {
+    transition: .1s ease-out;
+}

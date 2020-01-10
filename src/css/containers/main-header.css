@@ -1,6 +1,5 @@
 .header {
     grid-area: header;
-    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
     padding: var(--gap-normal);
     display: grid;
     grid-template-columns: 1fr auto;
@@ -22,16 +21,9 @@
 
 .header > nav > ul > li > a {
     display: block;
-    padding: var(--gap-small);
-    color: var(--color-tertiary);
+    padding: var(--gap-smaller);
     font-size: 1.125em;
-    background: rgba(0, 0, 0, .1);
-    border-radius: 5px;
     transition: .1s;
-}
-
-.header > nav > ul > li > a:hover {
-    background: rgba(0, 0, 0, .5);
 }
 
 @media (max-width: 768px) {
