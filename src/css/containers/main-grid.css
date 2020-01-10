@@ -12,11 +12,3 @@
 .content {
     grid-area: content;
 }
-
-.adverts {
-    grid-area: adverts;
-}
-
-.footer {
-    grid-area: footer;
-}

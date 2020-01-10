@@ -1,0 +1,10 @@
+.footer {
+    grid-area: footer;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+}
+
+.footer > p {
+    color: var(--color-tertiary);
+    text-align: center;
+    padding: var(--gap-normal);
+}
