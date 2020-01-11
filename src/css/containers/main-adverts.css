@@ -4,5 +4,6 @@
     display: grid;
     align-content: start;
     padding: var(--gap-normal);
-    grid-gap: var(--gap-normal)
+    grid-gap: var(--gap-normal);
+    grid-template-columns: repeat(autofit, minmax(150px, 1fr));
 }

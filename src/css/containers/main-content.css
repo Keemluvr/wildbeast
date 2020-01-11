@@ -90,3 +90,8 @@
     margin-top: var(--gap-normal);
 }
 
+@media (max-width: 600px) {
+    .content {
+        grid-template-columns: auto;
+    }
+}
