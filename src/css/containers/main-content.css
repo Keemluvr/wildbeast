@@ -1,0 +1,92 @@
+.content {
+    grid-area: content;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: var(--gap-normal);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: var(--gap-normal);
+}
+
+/* cards */
+.content > .characteristics {
+    display: flex;
+    align-items: flex-start;
+}
+
+.content > .characteristics > .simple-card {
+    width: var(--gap-bigger);
+    text-align: center;
+    position: relative;
+}
+
+.characteristics > .simple-card > span {
+    display: block;
+}
+
+.content > .characteristics > .simple-card:first-child {
+    margin-right: var(--gap-normal);
+}
+
+.content > .characteristics > .simple-card > .number {
+    font-size: 3em;
+    margin: var(--gap-smaller) auto;
+}
+
+.content > .characteristics > .simple-card > .label {
+    padding: var(--gap-tiny) 0;
+    position: relative;
+    top: 2px;
+}
+
+/* destaque */
+.content  > .spotlight {
+    font-size: 0.875em;
+    color: var(--color-secondary);
+    max-width: 16em;
+}
+
+/* citação */
+.quote > p {
+    font-size: 1.5em;
+    font-style: italic;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    color: var(--color-tertiary);
+}
+
+/* atributos */
+.attributes > li {
+    color: var(--color-tertiary);
+    font-family: Courier, monospace;
+    font-size: 1.125em;
+    padding: 15px;
+}
+
+.attributes > li + li{
+    border-top: 2px solid var(--color-secondary);
+}
+
+/* citação e atributos */
+
+.content > .quote, .attributes {
+    padding: var(--gap-normal);
+    border-radius: var(--gap-tiny);
+    box-shadow: var(--gap-tiny) var(--gap-tiny) 15px 0px rgba(44,44,44,.15);
+    background: var(--gradient-primary);
+    align-self: start;
+}
+
+/* parágrafos */
+.content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    letter-spacing: -0.005em;
+    color: rgba(0,0,0,0,.7);
+}
+
+.content > .information > p + p {
+    margin-top: var(--gap-normal);
+}
+

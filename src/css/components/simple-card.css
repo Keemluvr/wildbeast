@@ -1,0 +1,16 @@
+.simple-card {
+    border-radius: var(--gap-tiny);
+    background: var(--gradient-primary);
+    box-shadow: var(--gap-tiny) var(--gap-tiny) 15px 0px rgba(44,44,44,0.15);
+}
+
+.characteristics > .simple-card > .number {
+    color: var(--color-secondary);
+    line-height: 1;
+}
+
+.characteristics > .simple-card > .label {
+    background: var(--color-tertiary);
+    border-radius: 0 0 var(--gap-tiny) var(--gap-tiny);
+    color: var(--color-secondary);
+}

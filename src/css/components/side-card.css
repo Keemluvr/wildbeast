@@ -1,7 +1,7 @@
 .sidenav > ul > li > .side-card {
     background: var(color-tertiary);
-    border-radius: 5px;
-    box-shadow: 5px 5px 15px 0px rgba(44,44,44,0.15);
+    border-radius: var(--gap-tiny);
+    box-shadow: var(--gap-tiny) var(--gap-tiny) 15px 0px rgba(44,44,44,0.15);
 }
 
 .sidenav > ul > li > .side-card:hover {

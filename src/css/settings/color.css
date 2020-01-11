@@ -3,4 +3,6 @@
     --color-secondary: #B07BFB; 
     --color-tertiary: #FFF;
     --color-quaternary: #FAFBFC;
+
+    --gradient-primary: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
 }

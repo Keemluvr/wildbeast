@@ -1,5 +1,4 @@
 /* Grid geral */
-
 .grid {
     display: grid;
     grid-template-columns: minmax(160px, 1fr) 3fr 300px;
@@ -9,6 +8,14 @@
         "footer footer footer";
 }
 
-.content {
-    grid-area: content;
+.col-wide {
+    grid-column: 1 / -1;
+}
+
+.double-row {
+    grid-row: span 2;
+}
+
+.align-self-end {
+    align-self: end;
 }
