@@ -15,7 +15,7 @@
     flex-wrap: wrap;
 }
 
-.header > nav > ul > li+li {
+.header > nav > ul > li + li {
     margin-left: var(--gap-normal);
 }
 
@@ -26,8 +26,20 @@
     transition: .1s;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760px) {
     .header {
         grid-template-columns: auto;
+    }
+
+    .logo {
+        margin-bottom: var(--gap-small);
+    }
+
+    .header > nav > ul > li > a {
+        font-size: 1em;
+    }
+
+    .header > nav > ul > li + li {
+        margin-left: var(--gap-smaller);
     }
 }

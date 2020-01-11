@@ -15,3 +15,43 @@
 .sidenav > ul > li > .side-card:hover {
     transition: .1s ease-out;
 }
+
+@keyframes arrow {
+    from {
+        right: var(--gap-normal);
+    }
+    to {
+        right: var(--gap-small);
+    }
+}
+
+@media (max-width: 760px) {
+    .sidenav {
+        position: relative;
+        padding: 0 var(--gap-normal);
+        overflow-x: auto;
+        -webkit--overflow-scrolling: touch;
+        --ms-overflow-style: --ms-autohiding-scrollbar;
+    }
+
+    .sidenav:after {
+        content: '→';
+        position: absolute;
+        top: var(--gap-tiny);
+        right: 30px;
+        color: rgba(0,0,0,.3);
+        animation: arrow .5s ease-in 0s infinite alternate;
+    }
+
+    .sidenav > ul {
+        display: flex;
+    }
+
+    .sidenav > ul > li {
+        flex: 1 0 60px;
+    }
+
+    .sidenav > ul > li > .side-card {
+        margin: var(--gap-normal) var(--gap-normal) var(--gap-normal) 0;
+    }
+}
