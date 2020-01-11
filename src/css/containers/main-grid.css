@@ -19,3 +19,25 @@
 .align-self-end {
     align-self: end;
 }
+
+@media (max-width: 1200px) {
+    .grid {
+        grid-template-areas:
+            "header header header"
+            "sidenav content content"
+            "sidenav adverts adverts"
+            "footer footer footer";
+    }
+}
+
+@media (max-width: 760px) {
+    .grid {
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "header"
+            "sidenav"
+            "content"
+            "adverts"
+            "footer";
+    }
+}
